@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 2rem;
+	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.container {
+	max-width: 1000px;
+	margin-inline: auto;
+}
+
+h1 {
+	margin-bottom: 1em;
+	color: salmon;
+}
+
+h2 {
+	margin-bottom: .7em;
+	color: gold;
+}
+
+section {
+	/* padding: 5rem; */
+}
+
+p {
+	margin-bottom: .7em;
+	/* padding: inherit; */ /* eredita il valore del padding del genitore anche se il padding di default non viene ereditato */
+}
+
+img {
+	width: calc(200px - 1rem); /* 1rem e' il margine destro che ho dato all'immagine */
+}
+
+.left {
+	float: left;
+	margin-right: 1rem;
+}
+
+.right {
+	float: right;
+}
+
+.cleared {
+	clear: both;
+}
+
+/* .prova::before {
+	content: "";
+	background-color: salmon;
+	display: block;
+	height: 500px;
+	background-image: url('../img/lunga.jpg');
+} */
+
+.clearfix::after {
+	content: ""; /* il content e' obbligatorio altrimenti lo pseudoelemento non verra' mostrato */
+	display: block;
+	clear: both;
+}
